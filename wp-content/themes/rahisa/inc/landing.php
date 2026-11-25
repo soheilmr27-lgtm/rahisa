@@ -100,4 +100,16 @@ function rahisa_render_landing(): string {
 
 	return strtr( (string) file_get_contents( __DIR__ . '/landing.html' ), $replacements );
 }
-add_shortcode( 'rahisa_landing', 'rahisa_render_landing' );
+/**
+ * Render the landing as a native block so its markup keeps its own structure.
+ */
+function rahisa_register_landing_block(): void {
+	register_block_type(
+		'rahisa/landing',
+		array(
+			'api_version'     => 3,
+			'render_callback' => 'rahisa_render_landing',
+		)
+	);
+}
+add_action( 'init', 'rahisa_register_landing_block' );
