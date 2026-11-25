@@ -241,4 +241,4 @@ systemctl enable --now certbot.timer
 systemctl is-active certbot.timer
 openssl x509 -in "$cert_dir/fullchain.pem" -noout -issuer -enddate -ext subjectAltName
 printf 'LAUNCH OK: %s\n' "$public_url"
-certbot renew --cert-name "$domain" --dry-run
+certbot renew --cert-name "$domain" --dry-run --no-random-sleep-on-renew --non-interactive
