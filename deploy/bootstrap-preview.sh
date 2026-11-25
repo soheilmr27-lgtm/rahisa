@@ -27,9 +27,10 @@ if [[ -e "$site_root/wp-config.php" || ( -e "$site_config" && ! -e "$state_dir/d
     exit 1
 fi
 
+wp_download=$(mktemp -d)
+trap 'rm -rf -- "$wp_download"' EXIT
+
 if [[ ! -x "$wp_cli" ]]; then
-    wp_download=$(mktemp -d)
-    trap 'rm -rf -- "$wp_download"' EXIT
     curl --fail --silent --show-error --location --retry 2 --connect-timeout 12 --max-time 75 \
         --proto '=https' --proto-redir '=https' --output "$wp_download/wp-cli.phar" \
         https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar \
@@ -48,9 +49,17 @@ wp_site() {
 systemctl enable --now mariadb php8.3-fpm nginx
 
 if [[ ! -f "$site_root/wp-includes/version.php" ]]; then
-    wp_site core download --locale=fa_IR
+    wordpress_version=7.1.5
+    curl --fail --silent --show-error --location --retry 2 --connect-timeout 12 --max-time 120 \
+        --proto '=https' --proto-redir '=https' --output "$wp_download/wordpress.zip" \
+        "https://wordpress.org/wordpress-$wordpress_version.zip"
+    unzip -q "$wp_download/wordpress.zip" -d "$wp_download"
+    "$wp_cli" --allow-root --path="$wp_download/wordpress" core verify-checksums \
+        --version="$wordpress_version" --locale=en_US
+    cp -a -- "$wp_download/wordpress/." "$site_root"
+    chown -R www-data:www-data "$site_root"
 fi
-wp_site core verify-checksums --locale=fa_IR
+wp_site core verify-checksums --locale=en_US
 
 if [[ ! -f "$state_dir/database-password" ]]; then
     openssl rand -hex 32 > "$state_dir/database-password"
@@ -93,8 +102,12 @@ if ! wp_site core is-installed; then
         openssl rand -hex 24 > "$state_dir/wordpress-admin-password"
     fi
     wp_site core install --url="$preview_url" --title='رحیصا گالری' \
-        --admin_user=rahisa-owner --admin_email="$admin_email" --locale=fa_IR \
-        --skip-email --prompt=admin_password < "$state_dir/wordpress-admin-password"
+        --admin_user=rahisa-owner --admin_email="$admin_email" \
+        --skip-email --prompt=admin_password < "$state_dir/wordpress-admin-password" >/dev/null
+fi
+
+if [[ $(wp_site option get WPLANG) != fa_IR ]]; then
+    wp_site language core install fa_IR --activate
 fi
 
 if ! wp_site plugin is-active woocommerce; then
