@@ -24,3 +24,5 @@ function rahisa_enqueue_styles(): void {
 	wp_enqueue_style( 'rahisa', get_stylesheet_uri(), array(), wp_get_theme()->get( 'Version' ) );
 }
 add_action( 'wp_enqueue_scripts', 'rahisa_enqueue_styles' );
+
+require_once __DIR__ . '/inc/landing.php';
