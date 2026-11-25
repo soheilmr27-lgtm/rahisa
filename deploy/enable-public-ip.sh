@@ -30,6 +30,7 @@ cleanup() {
         if [[ ! -e "$transaction/had-link" ]]; then
             rm -f -- "$nginx_link"
         fi
+        systemctl reload php8.3-fpm
         nginx -t && systemctl reload nginx
         printf '%s\n' 'Rolled back the public IP configuration.' >&2
     fi
@@ -169,10 +170,13 @@ if [[ ! -L "$nginx_link" ]]; then
 fi
 nginx -t
 install -o root -g www-data -m 0640 "$transaction/wp-config.after" "$wp_config"
+systemctl reload php8.3-fpm
 systemctl reload nginx
+sleep 3
 
 curl --noproxy '*' -fsS --max-time 15 -D "$transaction/public-headers" "$public_url/" -o "$transaction/public.html"
 head -n 1 "$transaction/public-headers"
+grep -i '^location:' "$transaction/public-headers" || true
 grep -Eq '^HTTP/[0-9.]+ 200 ' "$transaction/public-headers"
 grep -Fqi 'wp-content/' "$transaction/public.html"
 if grep -Eqi '127\.0\.0\.1|localhost:8080' "$transaction/public.html"; then
