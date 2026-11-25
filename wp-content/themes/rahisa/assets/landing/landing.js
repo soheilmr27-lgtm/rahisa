@@ -25,6 +25,7 @@
     if (!event.target.closest('[data-rahisa-menu]')) closeMenus();
     if (event.target.closest('a[href="#enrollment"]')) {
       const enrollment = landing.querySelector('#enrollment');
+      if (!enrollment) return;
       enrollment.open = true;
       enrollment.querySelector('summary').focus({ preventScroll: true });
     }

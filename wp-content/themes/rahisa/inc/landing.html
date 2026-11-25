@@ -1,126 +1,126 @@
 <div class="rahisa-landing" lang="fa-IR" dir="rtl">
   <header class="rahisa-header rahisa-glass">
-    <a class="rahisa-brand" href="{{home}}" aria-label="رحیصا گالری، صفحه اصلی">
-      <img src="{{assets}}/logo.webp" width="167" height="49" alt="رحیصا گالری | RAHISA GALLERY">
+    <a class="rahisa-brand" href="{{home}}" aria-label="{{brand_home}}">
+      <img {{img_logo}} width="288" height="88" alt="{{brand_alt}}">
     </a>
     <details class="rahisa-mobile-menu" data-rahisa-menu>
-      <summary aria-label="منوی اصلی"><span class="rahisa-menu-icon" aria-hidden="true"></span></summary>
-      <nav class="rahisa-dropdown" aria-label="منوی اصلی">
-        <a href="#courses">دوره‌ها</a><a href="#academy">آکادمی</a><a href="#faq">سوالات متداول</a>
+      <summary aria-label="{{nav_label}}"><span class="rahisa-menu-icon" aria-hidden="true"></span></summary>
+      <nav class="rahisa-dropdown" aria-label="{{nav_label}}">
+        <a href="{{nav_courses}}">{{courses_nav}}</a><a href="{{nav_academy}}">{{academy_name}}</a><a href="{{nav_faq}}">{{faq_title}}</a>
       </nav>
     </details>
-    <nav class="rahisa-desktop-nav" aria-label="منوی اصلی">
+    <nav class="rahisa-desktop-nav" aria-label="{{nav_label}}">
       <details data-rahisa-menu>
-        <summary>دوره‌ها <span class="rahisa-chevron" aria-hidden="true"></span></summary>
+        <summary>{{courses_nav}} <span class="rahisa-chevron" aria-hidden="true"></span></summary>
         <div class="rahisa-dropdown">
-          <a href="{{side-seam}}">کت بدون درز پهلو{{side-seam-note}}</a>
-          <a href="{{princess}}">کت با برش عصایی{{princess-note}}</a>
-          <a href="{{trousers}}">شلوار{{trousers-note}}</a>
+          <a href="{{side-seam}}">{{course_one}}{{side-seam-note}}</a>
+          <a href="{{princess}}">{{course_two}}{{princess-note}}</a>
+          <a href="{{trousers}}">{{course_three}}{{trousers-note}}</a>
         </div>
       </details>
       <details data-rahisa-menu>
-        <summary>آکادمی <span class="rahisa-chevron" aria-hidden="true"></span></summary>
+        <summary>{{academy_name}} <span class="rahisa-chevron" aria-hidden="true"></span></summary>
         <div class="rahisa-dropdown">
-          <a href="#academy">آشنایی با آکادمی</a><a href="#gallery">گالری جزئیات دوخت</a><a href="#faq">سوالات متداول</a>
+          <a href="{{nav_academy}}">{{academy_nav}}</a><a href="{{nav_gallery}}">{{gallery_title}}</a><a href="{{nav_faq}}">{{faq_title}}</a>
         </div>
       </details>
     </nav>
     <div class="rahisa-actions">
-      <a class="rahisa-account" href="{{account}}" aria-label="ورود به حساب کاربری"><span class="rahisa-user-icon" aria-hidden="true"></span><span>ورود</span></a>
-      <a class="rahisa-button rahisa-header-cta" href="#courses">مشاهده دوره‌ها <span class="rahisa-arrow" aria-hidden="true"></span></a>
+      <a class="rahisa-account" href="{{account}}" aria-label="{{account_label}}"><span class="rahisa-user-icon" aria-hidden="true"></span><span>{{login}}</span></a>
+      <a class="rahisa-button rahisa-header-cta" href="{{nav_courses}}">{{cta}} <span class="rahisa-arrow" aria-hidden="true"></span></a>
     </div>
   </header>
 
   <main id="rahisa-main" class="rahisa-main" tabindex="-1">
-    <section class="rahisa-hero" aria-labelledby="rahisa-heading">
+    <!-- section hero --><section class="rahisa-hero" aria-labelledby="rahisa-heading">
       <picture class="rahisa-hero-photo">
-        <source media="(max-width: 767px)" srcset="{{assets}}/hero-mobile.webp" width="339" height="369">
-        <img src="{{assets}}/hero-desktop.webp" width="627" height="309" alt="" fetchpriority="high" decoding="async">
+        <source media="(max-width: 767px)" {{source_hero-mobile}} width="339" height="369">
+        <img {{img_hero-desktop}} width="627" height="309" alt="{{alt_hero-desktop}}" fetchpriority="high" decoding="async">
       </picture>
-      <div class="rahisa-dress-form" aria-hidden="true"></div>
+      <div class="rahisa-dress-form" aria-hidden="true"><img {{img_dress-form}} width="207" height="160" alt="" loading="lazy"></div>
       <div class="rahisa-hero-copy">
-        <h1 id="rahisa-heading">هنر دوخت،<br>امضای تو</h1>
-        <p class="rahisa-desktop-copy">آموزش تخصصی طراحی و دوخت لباس‌های زنانه</p>
-        <p class="rahisa-mobile-copy">آکادمی تخصصی آموزش خیاطی</p>
-        <a class="rahisa-button" href="#courses">مشاهده دوره‌ها <span class="rahisa-arrow" aria-hidden="true"></span></a>
+        <h1 id="rahisa-heading">{{headline}}</h1>
+        <p class="rahisa-desktop-copy">{{desktop_intro}}</p>
+        <p class="rahisa-mobile-copy">{{mobile_intro}}</p>
+        <a class="rahisa-button" href="{{hero_href}}">{{hero_cta}} <span class="rahisa-arrow" aria-hidden="true"></span></a>
       </div>
-    </section>
+    </section><!-- end section -->
 
-    <section class="rahisa-courses rahisa-wrap" id="courses" aria-labelledby="rahisa-courses-label">
-      <h2 id="rahisa-courses-label" class="rahisa-sr">دوره‌های خیاطی</h2>
+    <!-- section courses --><section class="rahisa-courses rahisa-wrap" id="courses" aria-labelledby="rahisa-courses-label">
+      <h2 id="rahisa-courses-label" class="rahisa-sr">{{courses_title}}</h2>
       <a class="rahisa-course rahisa-glass" href="{{side-seam}}">
-        <picture><source media="(max-width: 767px)" srcset="{{assets}}/side-seam-mobile.webp"><img src="{{assets}}/side-seam-desktop.webp" width="191" height="232" decoding="async" alt=""></picture>
-        <span class="rahisa-course-copy"><span class="rahisa-course-name">کت بدون درز پهلو</span><span class="rahisa-button rahisa-course-button" aria-hidden="true"><span class="rahisa-arrow"></span></span></span>{{side-seam-note}}
+        <picture><source media="(max-width: 767px)" {{source_side-seam-mobile}}><img {{img_side-seam-desktop}} width="191" height="232" decoding="async" alt="{{alt_side-seam-desktop}}"></picture>
+        <span class="rahisa-course-copy"><span class="rahisa-course-name">{{course_one}}</span><span class="rahisa-button rahisa-course-button" aria-hidden="true"><span class="rahisa-arrow"></span></span></span>{{side-seam-note}}
       </a>
       <a class="rahisa-course rahisa-glass" href="{{princess}}">
-        <picture><source media="(max-width: 767px)" srcset="{{assets}}/princess-mobile.webp"><img src="{{assets}}/princess-desktop.webp" width="190" height="232" decoding="async" alt=""></picture>
-        <span class="rahisa-course-copy"><span class="rahisa-course-name">کت با برش عصایی</span><span class="rahisa-button rahisa-course-button" aria-hidden="true"><span class="rahisa-arrow"></span></span></span>{{princess-note}}
+        <picture><source media="(max-width: 767px)" {{source_princess-mobile}}><img {{img_princess-desktop}} width="190" height="232" decoding="async" alt="{{alt_princess-desktop}}"></picture>
+        <span class="rahisa-course-copy"><span class="rahisa-course-name">{{course_two}}</span><span class="rahisa-button rahisa-course-button" aria-hidden="true"><span class="rahisa-arrow"></span></span></span>{{princess-note}}
       </a>
       <a class="rahisa-course rahisa-glass" href="{{trousers}}">
-        <picture><source media="(max-width: 767px)" srcset="{{assets}}/trousers-mobile.webp"><img src="{{assets}}/trousers-desktop.webp" width="186" height="232" decoding="async" alt=""></picture>
-        <span class="rahisa-course-copy"><span class="rahisa-course-name">شلوار</span><span class="rahisa-button rahisa-course-button" aria-hidden="true"><span class="rahisa-arrow"></span></span></span>{{trousers-note}}
+        <picture><source media="(max-width: 767px)" {{source_trousers-mobile}}><img {{img_trousers-desktop}} width="186" height="232" decoding="async" alt="{{alt_trousers-desktop}}"></picture>
+        <span class="rahisa-course-copy"><span class="rahisa-course-name">{{course_three}}</span><span class="rahisa-button rahisa-course-button" aria-hidden="true"><span class="rahisa-arrow"></span></span></span>{{trousers-note}}
       </a>
-    </section>
+    </section><!-- end section -->
 
-    <ul class="rahisa-benefits" aria-label="ویژگی‌های آکادمی">
-      <li><img src="{{assets}}/icon-form.webp" width="35" height="44" alt="" loading="lazy">آموزش تخصصی</li>
-      <li><img src="{{assets}}/icon-video.webp" width="55" height="39" alt="" loading="lazy">یادگیری آنلاین</li>
-      <li><picture><source media="(max-width: 767px)" srcset="{{assets}}/icon-sewing.webp"><img src="{{assets}}/icon-scissors.webp" width="50" height="42" alt="" loading="lazy"></picture>دوخت حرفه‌ای</li>
-    </ul>
+    <!-- section benefits --><ul class="rahisa-benefits" aria-label="{{benefit_n}}">
+      <li><img {{img_icon-form}} width="35" height="44" alt="{{alt_icon-form}}" loading="lazy">{{benefit_one}}</li>
+      <li><img {{img_icon-video}} width="55" height="39" alt="{{alt_icon-video}}" loading="lazy">{{benefit_two}}</li>
+      <li><picture><source media="(max-width: 767px)" {{source_icon-sewing}}><img {{img_icon-scissors}} width="50" height="42" alt="{{alt_icon-scissors}}" loading="lazy"></picture>{{benefit_three}}</li>
+    </ul><!-- end section -->
 
-    <section class="rahisa-academy rahisa-wrap rahisa-glass" id="academy" aria-labelledby="rahisa-academy-label">
-      <picture class="rahisa-academy-photo"><source media="(max-width: 767px)" srcset="{{assets}}/academy-mobile.webp"><img src="{{assets}}/academy-desktop.webp" width="521" height="161" alt="مانکن خیاطی و پارچه در کارگاه" loading="lazy" decoding="async"></picture>
+    <!-- section academy --><section class="rahisa-academy rahisa-wrap rahisa-glass" id="academy" aria-labelledby="rahisa-academy-label">
+      <picture class="rahisa-academy-photo"><source media="(max-width: 767px)" {{source_academy-mobile}}><img {{img_academy-desktop}} width="521" height="161" alt="{{alt_academy-desktop}}" loading="lazy" decoding="async"></picture>
       <div class="rahisa-academy-copy rahisa-glass">
         <div class="rahisa-academy-text">
-          <h2 id="rahisa-academy-label">رحیصا گالری</h2><p>آکادمی تخصصی آموزش خیاطی</p>
-          <a class="rahisa-button rahisa-academy-cta" href="#courses" aria-label="مشاهده دوره‌های آکادمی"><span class="rahisa-arrow" aria-hidden="true"></span></a>
+          <h2 id="rahisa-academy-label">{{brand}}</h2><p>{{academy_intro}}</p>
+          <a class="rahisa-button rahisa-academy-cta" href="{{academy_href}}" aria-label="{{academy_action}}"><span class="rahisa-arrow" aria-hidden="true"></span></a>
         </div>
-        <div class="rahisa-academy-mark" aria-hidden="true"><img src="{{assets}}/monogram.webp" width="81" height="73" alt="" loading="lazy"><span lang="en" dir="ltr">RAHISA GALLERY</span></div>
+        <div class="rahisa-academy-mark" aria-hidden="true"><img {{img_monogram}} width="81" height="73" alt="{{alt_monogram}}" loading="lazy"><span lang="en" dir="ltr">{{english_brand}}</span></div>
       </div>
-    </section>
+    </section><!-- end section -->
 
-    <section class="rahisa-gallery rahisa-wrap" id="gallery" aria-labelledby="rahisa-gallery-label">
-      <h2 id="rahisa-gallery-label" class="rahisa-section-title">گالری جزئیات دوخت</h2>
+    <!-- section gallery --><section class="rahisa-gallery rahisa-wrap" id="gallery" aria-labelledby="rahisa-gallery-label">
+      <h2 id="rahisa-gallery-label" class="rahisa-section-title">{{gallery_title}}</h2>
       <div class="rahisa-gallery-grid">
-        <picture class="gallery-buttons"><source media="(max-width: 767px)" srcset="{{assets}}/buttons-mobile.webp"><img src="{{assets}}/buttons.webp" width="179" height="147" alt="دکمه‌های طلایی سرآستین کت" loading="lazy" decoding="async"></picture>
-        <img class="gallery-fabric" src="{{assets}}/fabric.webp" width="108" height="147" alt="بافت پارچه" loading="lazy" decoding="async">
-        <picture class="gallery-lapel"><source media="(max-width: 767px)" srcset="{{assets}}/lapel-mobile.webp"><img src="{{assets}}/lapel.webp" width="184" height="147" alt="یقه و برگردان کت روشن" loading="lazy" decoding="async"></picture>
-        <img class="gallery-stitching" src="{{assets}}/stitching.webp" width="130" height="76" alt="ردیف دوخت روی پارچه" loading="lazy" decoding="async">
-        <picture class="gallery-satin"><source media="(max-width: 767px)" srcset="{{assets}}/satin-mobile.webp"><img src="{{assets}}/satin.webp" width="130" height="65" alt="چین‌های پارچه ساتن" loading="lazy" decoding="async"></picture>
-        <img class="gallery-tailoring" src="{{assets}}/tailoring.webp" width="134" height="147" alt="خطوط برش کت مشکی" loading="lazy" decoding="async">
-        <picture class="gallery-pleats"><source media="(max-width: 767px)" srcset="{{assets}}/pleats-mobile.webp"><img src="{{assets}}/pleats.webp" width="177" height="147" alt="پیلی‌ها و کمر شلوار" loading="lazy" decoding="async"></picture>
+        <picture class="gallery-buttons"><source media="(max-width: 767px)" {{source_buttons-mobile}}><img {{img_buttons}} width="179" height="147" alt="{{alt_buttons}}" loading="lazy" decoding="async"></picture>
+        <img class="gallery-fabric" {{img_fabric}} width="108" height="147" alt="{{alt_fabric}}" loading="lazy" decoding="async">
+        <picture class="gallery-lapel"><source media="(max-width: 767px)" {{source_lapel-mobile}}><img {{img_lapel}} width="184" height="147" alt="{{alt_lapel}}" loading="lazy" decoding="async"></picture>
+        <img class="gallery-stitching" {{img_stitching}} width="130" height="76" alt="{{alt_stitching}}" loading="lazy" decoding="async">
+        <picture class="gallery-satin"><source media="(max-width: 767px)" {{source_satin-mobile}}><img {{img_satin}} width="130" height="65" alt="{{alt_satin}}" loading="lazy" decoding="async"></picture>
+        <img class="gallery-tailoring" {{img_tailoring}} width="134" height="147" alt="{{alt_tailoring}}" loading="lazy" decoding="async">
+        <picture class="gallery-pleats"><source media="(max-width: 767px)" {{source_pleats-mobile}}><img {{img_pleats}} width="177" height="147" alt="{{alt_pleats}}" loading="lazy" decoding="async"></picture>
       </div>
-    </section>
+    </section><!-- end section -->
 
-    <section class="rahisa-faq rahisa-wrap" id="faq" aria-labelledby="rahisa-faq-label">
-      <h2 id="rahisa-faq-label" class="rahisa-section-title">سوالات متداول</h2>
+    <!-- section faq --><section class="rahisa-faq rahisa-wrap" id="faq" aria-labelledby="rahisa-faq-label">
+      <h2 id="rahisa-faq-label" class="rahisa-section-title">{{faq_title}}</h2>
       <div class="rahisa-questions">
-        <details><summary><span>دوره‌ها چگونه برگزار می‌شوند؟</span><span class="rahisa-faq-indicator" aria-hidden="true"></span></summary>
-          <p>مسیر آموزش در رحیصا آنلاین است. شیوهٔ ارائه و جزئیات هر دوره در صفحهٔ همان دوره اعلام می‌شود.</p>
+        <details><summary><span>{{q1}}</span><span class="rahisa-faq-indicator" aria-hidden="true"></span></summary>
+          <p>{{a1}}</p>
         </details>
-        <details id="enrollment"><summary><span>چگونه در دوره ثبت‌نام کنم؟</span><span class="rahisa-faq-indicator" aria-hidden="true"></span></summary>
-          <p>دورهٔ مورد نظر را از بخش <a href="#courses">دوره‌ها</a> انتخاب کنید. وقتی ثبت‌نام یک دوره باز باشد، کارت آن مستقیماً به صفحهٔ دوره هدایت می‌کند.</p>
+        <details id="enrollment"><summary><span>{{q2}}</span><span class="rahisa-faq-indicator" aria-hidden="true"></span></summary>
+          <p>{{a2}}</p>
         </details>
-        <details><summary><span>پس از ثبت‌نام به چه محتوایی دسترسی دارم؟</span><span class="rahisa-faq-indicator" aria-hidden="true"></span></summary>
-          <p>سرفصل‌ها، مدت دسترسی و پیش‌نیازها در صفحهٔ هر دوره درج می‌شود. پیش از ثبت‌نام جزئیات دورهٔ انتخابی را بررسی کنید.</p>
+        <details><summary><span>{{q3}}</span><span class="rahisa-faq-indicator" aria-hidden="true"></span></summary>
+          <p>{{a3}}</p>
         </details>
       </div>
-      <div class="rahisa-tape" aria-hidden="true"></div>
-    </section>
+      <div class="rahisa-tape" aria-hidden="true"><img {{img_tape}} width="207" height="160" alt="" loading="lazy"></div>
+    </section><!-- end section -->
 
-    <section class="rahisa-final rahisa-glass" aria-labelledby="rahisa-final-label">
-      <picture class="rahisa-final-photo"><source media="(max-width: 767px)" srcset="{{assets}}/cta-mobile.webp"><img src="{{assets}}/cta-desktop.webp" width="537" height="153" alt="" loading="lazy" decoding="async"></picture>
+    <!-- section final --><section class="rahisa-final rahisa-glass" aria-labelledby="rahisa-final-label">
+      <picture class="rahisa-final-photo"><source media="(max-width: 767px)" {{source_cta-mobile}}><img {{img_cta-desktop}} width="537" height="153" alt="{{alt_cta-desktop}}" loading="lazy" decoding="async"></picture>
       <div class="rahisa-final-copy">
-        <h2 id="rahisa-final-label"><span class="rahisa-desktop-copy">سفر حرفه‌ای دوختت را<br>از اینجا آغاز کن</span><span class="rahisa-mobile-copy">همین حالا<br>مهارت خیاطی‌ات را حرفه‌ای کن</span></h2>
-        <a class="rahisa-button" href="#courses">مشاهده دوره‌ها <span class="rahisa-arrow" aria-hidden="true"></span></a>
+        <h2 id="rahisa-final-label"><span class="rahisa-desktop-copy">{{final_desktop}}</span><span class="rahisa-mobile-copy">{{final_mobile}}</span></h2>
+        <a class="rahisa-button" href="{{final_href}}">{{final_cta}} <span class="rahisa-arrow" aria-hidden="true"></span></a>
       </div>
-    </section>
+    </section><!-- end section -->
   </main>
 
   <footer class="rahisa-footer">
-    <a class="rahisa-footer-brand" href="{{home}}"><img src="{{assets}}/logo.webp" width="167" height="49" alt="رحیصا گالری" loading="lazy"></a>
-    <nav aria-label="دسترسی سریع"><h2>دسترسی سریع</h2><a href="#courses">دوره‌ها</a><a href="#academy">آکادمی</a><a href="{{account}}">ورود</a></nav>
-    <nav aria-label="دوره‌ها"><h2>دوره‌ها</h2><a href="{{side-seam}}">کت بدون درز پهلو{{side-seam-note}}</a><a href="{{princess}}">کت با برش عصایی{{princess-note}}</a><a href="{{trousers}}">شلوار{{trousers-note}}</a></nav>
-    <div class="rahisa-footer-meta"><a href="{{home}}" lang="en" dir="ltr"><span aria-hidden="true">◎</span> rahisagallery.ir</a><div class="rahisa-legal">{{legal}}</div></div>
+    <a class="rahisa-footer-brand" href="{{home}}"><img {{img_logo}} width="288" height="88" alt="{{brand}}" loading="lazy"></a>
+    <nav aria-label="{{quick_title}}"><h2>{{quick_title}}</h2><a href="{{nav_courses}}">{{courses_nav}}</a><a href="{{nav_academy}}">{{academy_name}}</a><a href="{{account}}">{{login}}</a></nav>
+    <nav aria-label="{{courses_nav}}"><h2>{{courses_nav}}</h2><a href="{{side-seam}}">{{course_one}}{{side-seam-note}}</a><a href="{{princess}}">{{course_two}}{{princess-note}}</a><a href="{{trousers}}">{{course_three}}{{trousers-note}}</a></nav>
+    <div class="rahisa-footer-meta"><a href="{{home}}" lang="en" dir="ltr"><span aria-hidden="true">◎</span> {{site_label}}</a><div class="rahisa-social">{{social}}</div><div class="rahisa-legal">{{legal}}</div></div>
   </footer>
 </div>

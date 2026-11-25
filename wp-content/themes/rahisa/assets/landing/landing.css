@@ -35,7 +35,7 @@ body:has(.rahisa-landing) .wp-site-blocks { padding: 0; }
 .rahisa-landing *, .rahisa-landing *::before, .rahisa-landing *::after { box-sizing: border-box; }
 .rahisa-landing :where(h1,h2,p,ul) { margin: 0; }
 .rahisa-landing :where(a) { color: inherit; text-decoration: none; }
-.rahisa-landing :where(a:hover) { text-decoration: underline; text-underline-offset: .2em; }
+.rahisa-landing a:hover { text-decoration: none; }
 .rahisa-landing :where(a,summary):focus-visible { outline: 2px solid #6d3326; outline-offset: 3px; }
 .rahisa-landing :where(summary) { cursor: pointer; list-style: none; }
 .rahisa-landing summary::-webkit-details-marker { display: none; }
@@ -134,7 +134,7 @@ body:has(.rahisa-landing) .wp-site-blocks { padding: 0; }
 }
 .rahisa-hero-photo { position: absolute; z-index: -1; inset: 6.15cqw auto 0 0; width: 61.2%; }
 .rahisa-hero-photo img { width: 100%; height: auto; }
-.rahisa-dress-form { position: absolute; z-index: -1; top: 7.5cqw; right: 0; width: 20.5%; height: 28.5cqw; background: url(dress-form.webp) right top / 100% auto no-repeat; }
+.rahisa-dress-form { position: absolute; z-index: -1; top: 7.5cqw; right: 0; width: 20.5%; height: 28.5cqw;  }
 .rahisa-hero-copy { width: 36%; margin: 10.4cqw 15.5% 1.3cqw auto; text-align: center; }
 .rahisa-hero h1 { font-size: clamp(2rem, 5.1cqw, 5.15rem); font-weight: 700; line-height: 1.07; }
 .rahisa-hero p { margin-block: 1.7cqw 1.6cqw; font-size: clamp(.84rem, 1.48cqw, 1.4rem); }
@@ -195,8 +195,8 @@ body:has(.rahisa-landing) .wp-site-blocks { padding: 0; }
 .rahisa-faq-indicator::before { content: '+'; }
 .rahisa-questions details[open] .rahisa-faq-indicator::before { content: '−'; }
 .rahisa-questions p { padding: .3em 1em 1em; font-size: clamp(.83rem, 1.25cqw, 1.1rem); }
-.rahisa-questions p a { text-decoration: underline; text-underline-offset: .2em; }
-.rahisa-tape { height: 100%; background: url(tape.webp) left bottom / auto 100% no-repeat; mask-image: linear-gradient(to right,#000 55%,transparent); }
+.rahisa-questions p a { color: var(--accent); font-weight: 700; }
+.rahisa-tape { height: 100%;  mask-image: linear-gradient(to right,#000 55%,transparent); }
 
 .rahisa-final { position: relative; isolation: isolate; overflow: hidden; width: 95.8%; margin: 1.25cqw auto 0; border-radius: 3.15cqw; min-block-size: 15.6cqw; display: flex; align-items: center; justify-content: start; direction: ltr; }
 .rahisa-final-photo { position: absolute; z-index: -1; inset: 0 0 0 auto; width: 55%; mask-image: linear-gradient(to left,#000 85%,transparent); }
@@ -352,4 +352,51 @@ body:has(.rahisa-landing) .wp-site-blocks { padding: 0; }
   .rahisa-courses { grid-template-columns: minmax(0, 1fr); }
   .rahisa-course { min-inline-size: 0; inline-size: 100%; }
   .rahisa-benefits { align-items: stretch; }
+}
+
+.rahisa-landing {
+  --accent: #824b40;
+  --veil: 58%;
+  --glass: linear-gradient(146deg, rgb(255 252 248 / var(--veil)), #fff9f232 40%, #d6b8ab33 76%, #fff9f399);
+  --shadow: inset 0 1px 1px #fffefa, inset 0 -1px 3px #fff7edb3, 0 3px 8px #6a402915, 0 13px 33px -14px #5c302342;
+}
+.rahisa-header { box-shadow: var(--shadow); }
+.rahisa-landing :where(a, summary) { -webkit-tap-highlight-color: #a6705b30; }
+.rahisa-landing :where(h1,h2) { text-wrap: balance; }
+.rahisa-landing :where(a,summary):focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.rahisa-hero-photo { inset: 0 auto 0 0; width: 60%; mask-image: linear-gradient(90deg,#000 66%,transparent 100%); }
+.rahisa-hero-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 42% center; }
+.rahisa-dress-form { top: 7cqw; height: 29cqw; mask-image: linear-gradient(90deg,transparent,#000 47%); }
+.rahisa-dress-form img, .rahisa-tape img { width: 100%; height: 100%; object-fit: cover; }
+.rahisa-tape { align-self: stretch; overflow: hidden; position: relative; }
+.rahisa-tape img { position: absolute; inset: 0; }
+.rahisa-course picture { width: 77%; }
+.rahisa-course::after { background: linear-gradient(127deg,#fff7ec38,#f4e5d8c4 60%,#f4e8deed); }
+.rahisa-course img { object-position: 50% 39%; }
+.rahisa-button {
+  background: radial-gradient(ellipse at 12% -30%,#f5cdb49c,transparent 63%),linear-gradient(145deg,var(--accent),color-mix(in srgb,var(--accent) 82%,#311c17));
+  box-shadow: inset 0 1px 2px #fff4e9b3,inset 0 -2px 4px #56281929,0 5px 13px #70423333;
+}
+.rahisa-footer nav a { min-block-size: 24px; }
+.rahisa-social, .rahisa-legal { display: flex; gap: .8em; flex-wrap: wrap; }
+.rahisa-footer-meta > :empty { display: none; }
+.rahisa-course, .rahisa-button, .rahisa-account, .rahisa-header summary, .rahisa-footer a, .rahisa-dropdown a { transition: color .16s ease, transform .18s ease, box-shadow .18s ease, background-color .16s ease; }
+@media (hover: hover) {
+  .rahisa-course:hover { transform: translateY(-3px); box-shadow: var(--shadow), 0 12px 24px -16px var(--accent); }
+  .rahisa-button:hover, .rahisa-account:hover { transform: translateY(-1px); }
+  .rahisa-footer a:hover, .rahisa-header summary:hover { color: var(--accent); }
+  .rahisa-footer nav a:hover { transform: translateX(-3px); }
+}
+.rahisa-landing a:active, .rahisa-header summary:active { transform: translateY(1px); }
+@media (max-width: 767px) {
+  .rahisa-hero-photo { inset: 0 auto 0 0; width: 66%; mask-image: linear-gradient(90deg,#000 64%,transparent 100%); }
+  .rahisa-hero-photo img { height: 100%; object-position: 45% center; }
+  .rahisa-hero-copy { position: relative; background: var(--glass); }
+  .rahisa-course picture { width: 60%; }
+  .rahisa-course::after { background: linear-gradient(80deg,#f8ebe2ac,#f7e9dd25); }
+  .rahisa-questions summary { min-height: 44px; }
+  .rahisa-footer a { min-height: 27px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .rahisa-landing a:hover, .rahisa-landing a:active, .rahisa-header summary:active { transform: none; }
 }

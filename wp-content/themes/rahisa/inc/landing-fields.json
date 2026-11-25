@@ -1,0 +1,662 @@
+{
+  "brand_home": {
+    "section": "header",
+    "label": "توضیح پیوند نشان",
+    "type": "text",
+    "default": "رحیصا گالری، صفحه اصلی"
+  },
+  "brand_alt": {
+    "section": "header",
+    "label": "توضیح نشان سربرگ",
+    "type": "text",
+    "default": "رحیصا گالری | RAHISA GALLERY"
+  },
+  "account_label": {
+    "section": "header",
+    "label": "توضیح پیوند حساب",
+    "type": "text",
+    "default": "ورود به حساب کاربری"
+  },
+  "nav_label": {
+    "section": "header",
+    "label": "نام منو",
+    "type": "text",
+    "default": "منوی اصلی"
+  },
+  "academy_nav": {
+    "section": "header",
+    "label": "معرفی آکادمی",
+    "type": "text",
+    "default": "آشنایی با آکادمی"
+  },
+  "headline": {
+    "section": "hero",
+    "label": "عنوان اصلی",
+    "type": "lines",
+    "default": "هنر دوخت،\nامضای تو"
+  },
+  "desktop_intro": {
+    "section": "hero",
+    "label": "زیرعنوان دسکتاپ",
+    "type": "text",
+    "default": "آموزش تخصصی طراحی و دوخت لباس‌های زنانه"
+  },
+  "mobile_intro": {
+    "section": "hero",
+    "label": "زیرعنوان موبایل",
+    "type": "text",
+    "default": "آکادمی تخصصی آموزش خیاطی"
+  },
+  "academy_intro": {
+    "section": "academy",
+    "label": "توضیح آکادمی",
+    "type": "text",
+    "default": "آکادمی تخصصی آموزش خیاطی"
+  },
+  "academy_action": {
+    "section": "academy",
+    "label": "توضیح دکمه",
+    "type": "text",
+    "default": "مشاهده دوره‌های آکادمی"
+  },
+  "gallery_title": {
+    "section": "gallery",
+    "label": "عنوان گالری",
+    "type": "text",
+    "default": "گالری جزئیات دوخت"
+  },
+  "faq_title": {
+    "section": "faq",
+    "label": "عنوان سوالات",
+    "type": "text",
+    "default": "سوالات متداول"
+  },
+  "courses_title": {
+    "section": "courses",
+    "label": "عنوان بخش",
+    "type": "text",
+    "default": "دوره‌های خیاطی"
+  },
+  "course_one": {
+    "section": "courses",
+    "label": "نام دورهٔ اول",
+    "type": "text",
+    "default": "کت بدون درز پهلو"
+  },
+  "course_two": {
+    "section": "courses",
+    "label": "نام دورهٔ دوم",
+    "type": "text",
+    "default": "کت با برش عصایی"
+  },
+  "course_three": {
+    "section": "courses",
+    "label": "نام دورهٔ سوم",
+    "type": "text",
+    "default": "شلوار"
+  },
+  "benefit_n": {
+    "section": "benefits",
+    "label": "نام گروه",
+    "type": "text",
+    "default": "ویژگی‌های آکادمی"
+  },
+  "benefit_one": {
+    "section": "benefits",
+    "label": "ویژگی اول",
+    "type": "text",
+    "default": "آموزش تخصصی"
+  },
+  "benefit_two": {
+    "section": "benefits",
+    "label": "ویژگی دوم",
+    "type": "text",
+    "default": "یادگیری آنلاین"
+  },
+  "benefit_three": {
+    "section": "benefits",
+    "label": "ویژگی سوم",
+    "type": "text",
+    "default": "دوخت حرفه‌ای"
+  },
+  "quick_title": {
+    "section": "footer",
+    "label": "عنوان فهرست",
+    "type": "text",
+    "default": "دسترسی سریع"
+  },
+  "login": {
+    "section": "header",
+    "label": "عنوان ورود",
+    "type": "text",
+    "default": "ورود"
+  },
+  "brand": {
+    "section": "academy",
+    "label": "نام برند",
+    "type": "text",
+    "default": "رحیصا گالری"
+  },
+  "english_brand": {
+    "section": "academy",
+    "label": "نام لاتین",
+    "type": "text",
+    "default": "RAHISA GALLERY"
+  },
+  "final_desktop": {
+    "section": "final",
+    "label": "عنوان دسکتاپ",
+    "type": "lines",
+    "default": "سفر حرفه‌ای دوختت را\nاز اینجا آغاز کن"
+  },
+  "final_mobile": {
+    "section": "final",
+    "label": "عنوان موبایل",
+    "type": "lines",
+    "default": "همین حالا\nمهارت خیاطی‌ات را حرفه‌ای کن"
+  },
+  "site_label": {
+    "section": "footer",
+    "label": "نشانی نمایشی",
+    "type": "text",
+    "default": "rahisagallery.ir"
+  },
+  "courses_nav": {
+    "section": "header",
+    "label": "منوی دوره‌ها",
+    "type": "text",
+    "default": "دوره‌ها"
+  },
+  "academy_name": {
+    "section": "header",
+    "label": "منوی آکادمی",
+    "type": "text",
+    "default": "آکادمی"
+  },
+  "cta": {
+    "section": "hero",
+    "label": "متن دکمهٔ دوره‌ها",
+    "type": "text",
+    "default": "مشاهده دوره‌ها"
+  },
+  "q1": {
+    "section": "faq",
+    "label": "پرسش 1",
+    "type": "text",
+    "default": "دوره‌ها چگونه برگزار می‌شوند؟"
+  },
+  "a1": {
+    "section": "faq",
+    "label": "پاسخ 1",
+    "type": "textarea",
+    "default": "مسیر آموزش در رحیصا آنلاین است. شیوهٔ ارائه و جزئیات هر دوره در صفحهٔ همان دوره اعلام می‌شود."
+  },
+  "q2": {
+    "section": "faq",
+    "label": "پرسش 2",
+    "type": "text",
+    "default": "چگونه در دوره ثبت‌نام کنم؟"
+  },
+  "a2": {
+    "section": "faq",
+    "label": "پاسخ 2",
+    "type": "textarea",
+    "default": "دورهٔ مورد نظر را از بخش دوره‌ها انتخاب کنید. وقتی ثبت‌نام یک دوره باز باشد، کارت آن مستقیماً به صفحهٔ دوره هدایت می‌کند."
+  },
+  "q3": {
+    "section": "faq",
+    "label": "پرسش 3",
+    "type": "text",
+    "default": "پس از ثبت‌نام به چه محتوایی دسترسی دارم؟"
+  },
+  "a3": {
+    "section": "faq",
+    "label": "پاسخ 3",
+    "type": "textarea",
+    "default": "سرفصل‌ها، مدت دسترسی و پیش‌نیازها در صفحهٔ هر دوره درج می‌شود. پیش از ثبت‌نام جزئیات دورهٔ انتخابی را بررسی کنید."
+  },
+  "url_home": {
+    "section": "header",
+    "label": "پیوند صفحهٔ اصلی",
+    "type": "link",
+    "default": ""
+  },
+  "url_account": {
+    "section": "header",
+    "label": "پیوند حساب کاربری",
+    "type": "link",
+    "default": ""
+  },
+  "url_side-seam": {
+    "section": "courses",
+    "label": "پیوند دورهٔ اول",
+    "type": "link",
+    "default": ""
+  },
+  "url_princess": {
+    "section": "courses",
+    "label": "پیوند دورهٔ دوم",
+    "type": "link",
+    "default": ""
+  },
+  "url_trousers": {
+    "section": "courses",
+    "label": "پیوند دورهٔ سوم",
+    "type": "link",
+    "default": ""
+  },
+  "url_privacy": {
+    "section": "footer",
+    "label": "پیوند حریم خصوصی",
+    "type": "link",
+    "default": ""
+  },
+  "url_terms": {
+    "section": "footer",
+    "label": "پیوند شرایط استفاده",
+    "type": "link",
+    "default": ""
+  },
+  "nav_courses": {
+    "section": "header",
+    "label": "مقصد دوره‌ها",
+    "type": "link",
+    "default": "#courses"
+  },
+  "nav_academy": {
+    "section": "header",
+    "label": "مقصد آکادمی",
+    "type": "link",
+    "default": "#academy"
+  },
+  "nav_gallery": {
+    "section": "header",
+    "label": "مقصد گالری",
+    "type": "link",
+    "default": "#gallery"
+  },
+  "nav_faq": {
+    "section": "header",
+    "label": "مقصد سوالات",
+    "type": "link",
+    "default": "#faq"
+  },
+  "url_instagram": {
+    "section": "footer",
+    "label": "پیوند اینستاگرام",
+    "type": "link",
+    "default": ""
+  },
+  "url_telegram": {
+    "section": "footer",
+    "label": "پیوند تلگرام",
+    "type": "link",
+    "default": ""
+  },
+  "url_youtube": {
+    "section": "footer",
+    "label": "پیوند یوتیوب",
+    "type": "link",
+    "default": ""
+  },
+  "media_logo": {
+    "section": "header",
+    "label": "تصویر نشان برند",
+    "type": "media",
+    "default": ""
+  },
+  "media_hero-mobile": {
+    "section": "hero",
+    "label": "تصویر پرتره موبایل",
+    "type": "media",
+    "default": ""
+  },
+  "media_hero-desktop": {
+    "section": "hero",
+    "label": "تصویر پرتره دسکتاپ",
+    "type": "media",
+    "default": ""
+  },
+  "alt_hero-desktop": {
+    "section": "hero",
+    "label": "توضیح تصویر پرتره دسکتاپ",
+    "type": "text",
+    "default": ""
+  },
+  "media_side-seam-mobile": {
+    "section": "courses",
+    "label": "تصویر کت بدون درز موبایل",
+    "type": "media",
+    "default": ""
+  },
+  "media_side-seam-desktop": {
+    "section": "courses",
+    "label": "تصویر کت بدون درز دسکتاپ",
+    "type": "media",
+    "default": ""
+  },
+  "alt_side-seam-desktop": {
+    "section": "courses",
+    "label": "توضیح تصویر کت بدون درز دسکتاپ",
+    "type": "text",
+    "default": ""
+  },
+  "media_princess-mobile": {
+    "section": "courses",
+    "label": "تصویر کت عصایی موبایل",
+    "type": "media",
+    "default": ""
+  },
+  "media_princess-desktop": {
+    "section": "courses",
+    "label": "تصویر کت عصایی دسکتاپ",
+    "type": "media",
+    "default": ""
+  },
+  "alt_princess-desktop": {
+    "section": "courses",
+    "label": "توضیح تصویر کت عصایی دسکتاپ",
+    "type": "text",
+    "default": ""
+  },
+  "media_trousers-mobile": {
+    "section": "courses",
+    "label": "تصویر شلوار موبایل",
+    "type": "media",
+    "default": ""
+  },
+  "media_trousers-desktop": {
+    "section": "courses",
+    "label": "تصویر شلوار دسکتاپ",
+    "type": "media",
+    "default": ""
+  },
+  "alt_trousers-desktop": {
+    "section": "courses",
+    "label": "توضیح تصویر شلوار دسکتاپ",
+    "type": "text",
+    "default": ""
+  },
+  "media_icon-form": {
+    "section": "benefits",
+    "label": "تصویر مانکن",
+    "type": "media",
+    "default": ""
+  },
+  "alt_icon-form": {
+    "section": "benefits",
+    "label": "توضیح تصویر مانکن",
+    "type": "text",
+    "default": ""
+  },
+  "media_icon-video": {
+    "section": "benefits",
+    "label": "تصویر ویدیو",
+    "type": "media",
+    "default": ""
+  },
+  "alt_icon-video": {
+    "section": "benefits",
+    "label": "توضیح تصویر ویدیو",
+    "type": "text",
+    "default": ""
+  },
+  "media_icon-sewing": {
+    "section": "benefits",
+    "label": "تصویر چرخ خیاطی",
+    "type": "media",
+    "default": ""
+  },
+  "media_icon-scissors": {
+    "section": "benefits",
+    "label": "تصویر قیچی",
+    "type": "media",
+    "default": ""
+  },
+  "alt_icon-scissors": {
+    "section": "benefits",
+    "label": "توضیح تصویر قیچی",
+    "type": "text",
+    "default": ""
+  },
+  "media_academy-mobile": {
+    "section": "academy",
+    "label": "تصویر کارگاه موبایل",
+    "type": "media",
+    "default": ""
+  },
+  "media_academy-desktop": {
+    "section": "academy",
+    "label": "تصویر کارگاه دسکتاپ",
+    "type": "media",
+    "default": ""
+  },
+  "alt_academy-desktop": {
+    "section": "academy",
+    "label": "توضیح تصویر کارگاه دسکتاپ",
+    "type": "text",
+    "default": "مانکن خیاطی و پارچه در کارگاه"
+  },
+  "media_monogram": {
+    "section": "academy",
+    "label": "تصویر تک‌نشان",
+    "type": "media",
+    "default": ""
+  },
+  "alt_monogram": {
+    "section": "academy",
+    "label": "توضیح تصویر تک‌نشان",
+    "type": "text",
+    "default": ""
+  },
+  "media_buttons-mobile": {
+    "section": "gallery",
+    "label": "تصویر دکمه موبایل",
+    "type": "media",
+    "default": ""
+  },
+  "media_buttons": {
+    "section": "gallery",
+    "label": "تصویر دکمه",
+    "type": "media",
+    "default": ""
+  },
+  "alt_buttons": {
+    "section": "gallery",
+    "label": "توضیح تصویر دکمه",
+    "type": "text",
+    "default": "دکمه‌های طلایی سرآستین کت"
+  },
+  "media_fabric": {
+    "section": "gallery",
+    "label": "تصویر بافت پارچه",
+    "type": "media",
+    "default": ""
+  },
+  "alt_fabric": {
+    "section": "gallery",
+    "label": "توضیح تصویر بافت پارچه",
+    "type": "text",
+    "default": "بافت پارچه"
+  },
+  "media_lapel-mobile": {
+    "section": "gallery",
+    "label": "تصویر یقه موبایل",
+    "type": "media",
+    "default": ""
+  },
+  "media_lapel": {
+    "section": "gallery",
+    "label": "تصویر یقه",
+    "type": "media",
+    "default": ""
+  },
+  "alt_lapel": {
+    "section": "gallery",
+    "label": "توضیح تصویر یقه",
+    "type": "text",
+    "default": "یقه و برگردان کت روشن"
+  },
+  "media_stitching": {
+    "section": "gallery",
+    "label": "تصویر دوخت",
+    "type": "media",
+    "default": ""
+  },
+  "alt_stitching": {
+    "section": "gallery",
+    "label": "توضیح تصویر دوخت",
+    "type": "text",
+    "default": "ردیف دوخت روی پارچه"
+  },
+  "media_satin-mobile": {
+    "section": "gallery",
+    "label": "تصویر ساتن موبایل",
+    "type": "media",
+    "default": ""
+  },
+  "media_satin": {
+    "section": "gallery",
+    "label": "تصویر ساتن",
+    "type": "media",
+    "default": ""
+  },
+  "alt_satin": {
+    "section": "gallery",
+    "label": "توضیح تصویر ساتن",
+    "type": "text",
+    "default": "چین‌های پارچه ساتن"
+  },
+  "media_tailoring": {
+    "section": "gallery",
+    "label": "تصویر برش کت",
+    "type": "media",
+    "default": ""
+  },
+  "alt_tailoring": {
+    "section": "gallery",
+    "label": "توضیح تصویر برش کت",
+    "type": "text",
+    "default": "خطوط برش کت مشکی"
+  },
+  "media_pleats-mobile": {
+    "section": "gallery",
+    "label": "تصویر پیلی موبایل",
+    "type": "media",
+    "default": ""
+  },
+  "media_pleats": {
+    "section": "gallery",
+    "label": "تصویر پیلی",
+    "type": "media",
+    "default": ""
+  },
+  "media_cta-mobile": {
+    "section": "final",
+    "label": "تصویر قیچی و ساتن موبایل",
+    "type": "media",
+    "default": ""
+  },
+  "media_cta-desktop": {
+    "section": "final",
+    "label": "تصویر قیچی و ساتن دسکتاپ",
+    "type": "media",
+    "default": ""
+  },
+  "alt_cta-desktop": {
+    "section": "final",
+    "label": "توضیح تصویر قیچی و ساتن دسکتاپ",
+    "type": "text",
+    "default": ""
+  },
+  "media_tape": {
+    "section": "faq",
+    "label": "تصویر متر خیاطی",
+    "type": "media",
+    "default": ""
+  },
+  "media_dress-form": {
+    "section": "hero",
+    "label": "تصویر مانکن پس‌زمینه",
+    "type": "media",
+    "default": ""
+  },
+  "alt_pleats": {
+    "section": "gallery",
+    "type": "text",
+    "label": "متن جایگزین تصویر پیلی‌ها",
+    "default": "پیلی‌ها و کمر شلوار"
+  },
+  "hero_cta": {
+    "section": "hero",
+    "label": "دعوت به مشاهدهٔ دوره‌ها",
+    "default": "مشاهده دوره‌ها",
+    "type": "text"
+  },
+  "final_cta": {
+    "section": "final",
+    "label": "متن دکمهٔ پایانی",
+    "default": "مشاهده دوره‌ها",
+    "type": "text"
+  },
+  "hero_href": {
+    "section": "hero",
+    "label": "مقصد دکمه",
+    "default": "#courses",
+    "type": "link"
+  },
+  "academy_href": {
+    "section": "academy",
+    "label": "مقصد دکمه",
+    "default": "#courses",
+    "type": "link"
+  },
+  "final_href": {
+    "section": "final",
+    "label": "مقصد دکمه",
+    "default": "#courses",
+    "type": "link"
+  },
+  "meta_title": {
+    "section": "header",
+    "label": "عنوان صفحه در مرورگر و جست‌وجو",
+    "default": "رحیصا گالری | آکادمی تخصصی آموزش خیاطی",
+    "type": "text"
+  },
+  "meta_desc": {
+    "section": "header",
+    "label": "توضیح صفحه برای موتور جست‌وجو",
+    "default": "آموزش طراحی و دوخت لباس‌های زنانه در رحیصا گالری. دوره‌های کت بدون درز پهلو، کت با برش عصایی و شلوار را ببینید.",
+    "type": "textarea"
+  },
+  "label_privacy": {
+    "section": "footer",
+    "label": "عنوان پیوند حریم خصوصی",
+    "default": "حریم خصوصی",
+    "type": "text"
+  },
+  "label_terms": {
+    "section": "footer",
+    "label": "عنوان پیوند شرایط استفاده",
+    "default": "شرایط استفاده",
+    "type": "text"
+  },
+  "label_instagram": {
+    "section": "footer",
+    "label": "عنوان پیوند اینستاگرام",
+    "default": "اینستاگرام",
+    "type": "text"
+  },
+  "label_youtube": {
+    "section": "footer",
+    "label": "عنوان پیوند یوتیوب",
+    "default": "یوتیوب",
+    "type": "text"
+  },
+  "label_telegram": {
+    "section": "footer",
+    "label": "عنوان پیوند تلگرام",
+    "default": "تلگرام",
+    "type": "text"
+  }
+}

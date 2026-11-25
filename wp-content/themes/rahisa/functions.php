@@ -25,4 +25,5 @@ function rahisa_enqueue_styles(): void {
 }
 add_action( 'wp_enqueue_scripts', 'rahisa_enqueue_styles' );
 
+require_once __DIR__ . '/inc/landing-editor.php';
 require_once __DIR__ . '/inc/landing.php';
