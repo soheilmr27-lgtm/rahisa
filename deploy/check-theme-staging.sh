@@ -82,12 +82,13 @@ wp_stage language core activate fa_IR
 wp_stage plugin activate woocommerce
 wp_stage theme activate rahisa
 wp_stage option update woocommerce_coming_soon no
-wp_stage rewrite structure '/%postname%/'
+wp_stage option update permalink_structure '/%postname%/'
 wp_stage eval '
 if (!wp_is_block_theme() || get_stylesheet() !== "rahisa" || get_locale() !== "fa_IR" || !is_rtl() || !class_exists("WooCommerce")) {
     exit(1);
 }
 WC_Install::create_pages();
+flush_rewrite_rules(false);
 $product = new WC_Product_Simple();
 $product->set_name("Rahisa Preview Product");
 $product->set_slug("rahisa-preview-product");
