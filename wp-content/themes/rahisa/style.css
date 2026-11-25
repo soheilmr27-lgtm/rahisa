@@ -1,0 +1,23 @@
+/*
+Theme Name: Rahisa
+Description: Block theme foundation for Rahisa Gallery.
+Version: 0.1.0
+Requires at least: 6.6
+Requires PHP: 8.3
+Text Domain: rahisa
+*/
+
+.rahisa-site-header,
+.rahisa-site-footer {
+	padding-block: 1rem;
+}
+
+.rahisa-site-content {
+	min-block-size: 50vh;
+	padding-block: clamp(1rem, 4vw, 3rem);
+}
+
+.rahisa-site-content img {
+	max-inline-size: 100%;
+	block-size: auto;
+}
